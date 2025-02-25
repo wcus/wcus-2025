@@ -1,0 +1,43 @@
+name: Build the CSS and push back to main.
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+          - css/**
+          - .stylelintrc.json
+          - package.json
+          - postcss.config.js
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                persist-credentials: false
+                fetch-depth: 0 
+
+            - name: Install NodeJS
+              uses: actions/setup-node@v4
+              with:
+                  node-version-file: '.nvmrc'
+                  cache: npm
+
+            - name: Install JS dependencies
+              run: npm ci
+
+            - name: Build
+              run: |
+                  npm run lint
+                  npm run build
+
+            - name: Commit and push
+              uses: actions-js/push@156f2b10c3aa000c44dbe75ea7018f32ae999772
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: main
+                  message: 'Build CSS: ${{ github.sha }}'
