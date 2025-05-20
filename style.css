@@ -84,6 +84,10 @@ button:focus,
 	border-radius: 2px;
 }
 
+.wp-block-file:not(.wp-element-button) {
+	font-size: inherit;
+}
+
 /* Style default form elements */
 
 input[type="submit"],
@@ -147,6 +151,10 @@ input[type="reset"] {
 .contact-form label span.grunion-label-required {
 	opacity: 0.9 !important;
 	color: var(--wp--preset--color--contrast-2);
+}
+
+:where(.wp-block-jetpack-button) .wp-block-button__link {
+	height: auto;
 }
 
 /* Block overrides */
@@ -216,8 +224,4 @@ input[type="reset"] {
 
 body.home footer.wp-block-template-part {
 	margin-top: 0 !important;
-}
-
-body.home footer.wp-block-template-part .wp-block-group:first-child {
-	padding-top: 0 !important;
 }
