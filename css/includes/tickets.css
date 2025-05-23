@@ -16,7 +16,7 @@
 		border-collapse: collapse;
 
 		& thead th {
-			border-bottom: 2px dashed var(--wp--preset--color--accent);
+			border-bottom: 2px dashed var(--wp--preset--color--accent-2);
 		}
 
 		& th,
