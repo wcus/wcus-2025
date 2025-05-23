@@ -317,7 +317,7 @@ body.home footer.wp-block-template-part {
 	}
 
 :is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) thead th {
-			border-bottom: 2px dashed var(--wp--preset--color--accent-2);
+			border-bottom: 2px dashed var(--wp--preset--color--accent-3);
 		}
 
 :is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) th,:is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) td {
