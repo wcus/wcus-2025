@@ -190,6 +190,15 @@ input[type="reset"] {
 	outline-offset: -2px;
 }
 
+/* Add navigation highlight style */
+.is-style-highlight a {
+	background: var(--wp--preset--color--accent-5);
+	color: var(--wp--preset--color--white) !important;
+	padding-inline: 1em;
+	padding-block: 0.25em;
+	border-radius: 0.5em;
+}
+
 /* Style the details block better */
 .wp-block-details {
 	width: 100%;
