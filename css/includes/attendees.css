@@ -63,8 +63,7 @@
 		text-align: center;
 	}
 
-	& .tix-attendee-name,
-	& .tix-attendee-url {
+	& .tix-attendee-name {
 		display: none;
 	}
 }

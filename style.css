@@ -301,7 +301,7 @@ body.home footer.wp-block-template-part {
 		text-align: center;
 	}
 
-#tix-attendees .tix-attendee-name,#tix-attendees .tix-attendee-url {
+#tix-attendees .tix-attendee-name {
 		display: none;
 	}
 
