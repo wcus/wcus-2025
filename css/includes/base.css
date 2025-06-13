@@ -238,3 +238,8 @@ input[type="reset"] {
 body.home footer.wp-block-template-part {
 	margin-top: 0 !important;
 }
+
+/* Social button added color */
+.is-style-logos-only li.wp-social-link a svg path {
+    color: var(--wp--preset--color--accent-4);
+}
