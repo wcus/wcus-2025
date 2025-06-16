@@ -365,6 +365,7 @@ body.page-slug-organizers .wp-block-wordcamp-avatar {
 
 :is(body.page-slug-organizers .wp-block-wordcamp-avatar) img {
 			vertical-align: middle;
+			height: auto;
 		}
 
 :is(body.page-slug-organizers .wp-block-wordcamp-avatar)::before {
