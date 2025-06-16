@@ -355,7 +355,7 @@ body.home footer.wp-block-template-part {
 			display: none;
 		}
 
-body.page-slug-organizers .wp-block-wordcamp-avatar {
+:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-wordcamp-avatar {
 		max-width: 100%;
 		height: auto !important;
 		width: auto !important;
@@ -363,12 +363,12 @@ body.page-slug-organizers .wp-block-wordcamp-avatar {
 		position: relative;
 	}
 
-:is(body.page-slug-organizers .wp-block-wordcamp-avatar) img {
+:is(:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-wordcamp-avatar) img {
 			vertical-align: middle;
 			height: auto;
 		}
 
-:is(body.page-slug-organizers .wp-block-wordcamp-avatar)::before {
+:is(:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-wordcamp-avatar)::before {
 			content: "";
 			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
 			background-repeat: no-repeat;

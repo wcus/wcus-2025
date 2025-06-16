@@ -41,6 +41,8 @@ body.page-slug-speakers {
 	}
 }
 
+.wp-block-query .wcb_organizer,
+body.single-wcb_organizer,
 body.page-slug-organizers {
 
 	& .wp-block-wordcamp-avatar {
