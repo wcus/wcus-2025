@@ -1,0 +1,111 @@
+body.page-slug-organizers,
+body.page-slug-speakers {
+
+	& .wp-block-post-template-is-layout-grid {
+		gap: var(--wp--preset--spacing--40);
+
+		&.columns-4 {
+			@media (max-width: 960px) {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+
+		&.columns-3 {
+			@media (max-width: 740px) {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+		}
+	}
+
+	& .wp-block-post-content {
+		font-size: var(--wp--preset--font-size--medium);
+		word-wrap: break-word;
+	}
+
+	& .wp-block-read-more {
+		text-decoration: underline;
+
+		&:hover,
+		&:active {
+			text-decoration: none;
+		}
+
+		&:focus {
+			text-decoration: underline dashed;
+		}
+
+		& .screen-reader-text,
+		& ~ * {
+			display: none;
+		}
+	}
+}
+
+body.page-slug-organizers {
+
+	& .wp-block-wordcamp-avatar {
+		max-width: 100%;
+		height: auto !important;
+		width: auto !important;
+		overflow: hidden;
+		position: relative;
+
+		& img {
+			vertical-align: middle;
+		}
+
+		&::before {
+			content: "";
+			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+		}
+	}
+}
+
+body.single-wcb_organizer {
+
+	& .wp-block-post-content .wp-block-read-more {
+		display: none;
+	}
+}
+
+.wp-block-query .wcb_speaker,
+body.page-slug-speakers,
+body.single-wcb_speaker {
+
+	& .wp-block-wordcamp-avatar {
+		max-width: 100%;
+		height: auto !important;
+		overflow: hidden;
+		position: relative;
+
+		& img {
+			display: block;
+			vertical-align: middle;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		&::before {
+			content: "";
+			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+		}
+
+		&.is-style-rounded::before {
+			border-radius: 50%;
+		}
+	}
+}
