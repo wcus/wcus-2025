@@ -72,10 +72,10 @@ body.page-slug-organizers {
 
 	& .wp-block-post-terms a[href$="/team/organizers/"],
 	& .wp-block-post-terms a[href$="/team/organizers/"] + .wp-block-post-terms__separator,
-	& .wp-block-post-terms .wp-block-post-terms__separator:has(+ a[href$="/team/organizers/"]),
+	& .wp-block-post-terms .wp-block-post-terms__separator:last-of-type:has(+ a[href$="/team/organizers/"]),
 	& .wp-block-post-terms a[href$="/team/lead-organizing-team/"],
 	& .wp-block-post-terms a[href$="/team/lead-organizing-team/"] + .wp-block-post-terms__separator,
-	& .wp-block-post-terms .wp-block-post-terms__separator:has(+ a[href$="/team/lead-organizing-team/"]) {
+	& .wp-block-post-terms .wp-block-post-terms__separator:last-of-type:has(+ a[href$="/team/lead-organizing-team/"]) {
 		display: none;
 	}
 }
