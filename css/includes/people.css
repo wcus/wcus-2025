@@ -69,6 +69,15 @@ body.page-slug-organizers {
 			z-index: -1;
 		}
 	}
+
+	& .wp-block-post-terms a[href$="/team/organizers/"],
+	& .wp-block-post-terms a[href$="/team/organizers/"] + .wp-block-post-terms__separator,
+	& .wp-block-post-terms .wp-block-post-terms__separator:has(+ a[href$="/team/organizers/"]),
+	& .wp-block-post-terms a[href$="/team/lead-organizing-team/"],
+	& .wp-block-post-terms a[href$="/team/lead-organizing-team/"] + .wp-block-post-terms__separator,
+	& .wp-block-post-terms .wp-block-post-terms__separator:has(+ a[href$="/team/lead-organizing-team/"]) {
+		display: none;
+	}
 }
 
 body.single-wcb_organizer {
