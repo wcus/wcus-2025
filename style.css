@@ -380,8 +380,20 @@ body.home footer.wp-block-template-part {
 			z-index: -1;
 		}
 
-:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/organizers/"],:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/organizers/"] + .wp-block-post-terms__separator,:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms .wp-block-post-terms__separator:last-of-type:has( + a[href$="/team/organizers/"]),:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/lead-organizing-team/"],:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/lead-organizing-team/"] + .wp-block-post-terms__separator,:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms .wp-block-post-terms__separator:last-of-type:has( + a[href$="/team/lead-organizing-team/"]) {
+:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/organizers/"],:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/organizers/"] + .wp-block-post-terms__separator,:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms .wp-block-post-terms__separator:last-of-type:has( + a[href$="/team/organizers/"]),:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/lead-organizing-team/"],:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/lead-organizing-team/"] + .wp-block-post-terms__separator,:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms .wp-block-post-terms__separator:last-of-type:has( + a[href$="/team/lead-organizing-team/"]),:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/team-leads/"],:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms a[href$="/team/team-leads/"] + .wp-block-post-terms__separator,:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wp-block-post-terms .wp-block-post-terms__separator:last-of-type:has( + a[href$="/team/team-leads/"]) {
 		display: none;
+	}
+
+:is(.wp-block-query .wcb_organizer,body.single-wcb_organizer,body.page-slug-organizers) .wcb_organizer_team-team-leads .wp-block-wordcamp-avatar::after {
+		content: "Team Lead";
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		padding: 4px 12px;
+		color: var(--wp--preset--color--accent-4);
+		background-color: var(--wp--preset--color--white);
+		background-image: url(https://wc-us.org/wp-content/uploads/2024/02/topography-dark.svg);
+		background-size: 400px auto;
 	}
 
 body.single-wcb_organizer .wp-block-post-content .wp-block-read-more {
