@@ -33,6 +33,7 @@
 		width: auto !important;
 		float: none;
 		position: relative;
+		overflow: hidden;
 
 		&::before {
 			content: "";
@@ -64,6 +65,16 @@
 	}
 
 	& .tix-attendee-name {
+		display: none;
+	}
+
+	& .tix-attendee-url {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	& .tix-wordpress-org-profile-url:has(+ .tix-company-or-personal-website) {
 		display: none;
 	}
 }

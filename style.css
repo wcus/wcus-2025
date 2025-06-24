@@ -285,6 +285,7 @@ body.home footer.wp-block-template-part {
 		width: auto !important;
 		float: none;
 		position: relative;
+		overflow: hidden;
 	}
 
 :is(#tix-attendees li)::before {
@@ -316,6 +317,16 @@ body.home footer.wp-block-template-part {
 	}
 
 #tix-attendees .tix-attendee-name {
+		display: none;
+	}
+
+#tix-attendees .tix-attendee-url {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+#tix-attendees .tix-wordpress-org-profile-url:has( + .tix-company-or-personal-website) {
 		display: none;
 	}
 
