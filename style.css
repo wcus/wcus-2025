@@ -252,14 +252,6 @@ body.home footer.wp-block-template-part {
 	header.wp-block-template-part .wp-block-group-is-layout-flex {
 		flex-direction: column;
 	}
-
-	.wp-block-navigation.items-justified-right .wp-block-navigation__container .has-child .wp-block-navigation__submenu-container,
-	.wp-block-navigation.items-justified-right .wp-block-page-list > .has-child .wp-block-navigation__submenu-container,
-	.wp-block-navigation.items-justified-space-between .wp-block-page-list > .has-child:last-child .wp-block-navigation__submenu-container,
-	.wp-block-navigation.items-justified-space-between > .wp-block-navigation__container > .has-child:last-child .wp-block-navigation__submenu-container {
-		right: auto;
-		left: 0;
-	}
 }
 
 @media (max-width: 599px) {
