@@ -55,7 +55,7 @@
 			padding-top: 0;
 			padding-left: 0;
 			padding-right: 0;
-			border-right: 2px solid var(--wp--preset--color--custom-accent-six);
+			border-left: 2px solid var(--wp--preset--color--custom-accent-six);
 		}
 
 		& .wp-block-navigation-item__content {
