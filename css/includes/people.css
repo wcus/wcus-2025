@@ -51,8 +51,12 @@ body.page-slug-organizers {
 		width: auto !important;
 		overflow: hidden;
 		position: relative;
+		aspect-ratio: 1;
+		align-content: center;
 
 		& img {
+			position: relative;
+			z-index: 1;
 			vertical-align: middle;
 			height: auto;
 		}
@@ -66,7 +70,8 @@ body.page-slug-organizers {
 			width: 100%;
 			height: 100%;
 			position: absolute;
-			z-index: -1;
+			inset: 0;
+			z-index: 0;
 		}
 	}
 
@@ -111,8 +116,12 @@ body.single-wcb_speaker {
 		height: auto !important;
 		overflow: hidden;
 		position: relative;
+		aspect-ratio: 1;
+		align-content: center;
 
 		& img {
+			position: relative;
+			z-index: 1;
 			display: block;
 			vertical-align: middle;
 			object-fit: cover;
@@ -128,7 +137,8 @@ body.single-wcb_speaker {
 			width: 100%;
 			height: 100%;
 			position: absolute;
-			z-index: -1;
+			inset: 0;
+			z-index: 0;
 		}
 
 		&.is-style-rounded::before {
