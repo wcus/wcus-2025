@@ -118,6 +118,10 @@ body.single-wcb_session {
 			}
 		}
 
+		&.has-category-hidden > * {
+			display: none !important;
+		}
+
 		&::before {
 			display: inline-block;
 			margin-block-end: 0.5rem;
@@ -127,14 +131,7 @@ body.single-wcb_session {
 			font-size: 1em;
 		}
 
-		&.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before,
-		&.has-slug-opening-remarks::before,
-		&.has-slug-opening-remarks-2::before,
-		&.has-slug-closing-announcements::before {
-			content: "Mt. Hood (Oregon Ballroom)";
-		}
-
-		&.has-track-5-campfire::before {
+		&.has-track-track-3-campfire::before {
 			content: "WordCamp US Lounge";
 		}
 
@@ -268,25 +265,15 @@ body.single-wcb_session {
 			font-size: 1em;
 		}
 
-		& .has-track-1-rose-city::before {
+		& .has-track-track-1-rose-city::before {
 			content: "Rose City (A105 - A106)";
 		}
 
-		& .has-track-2-stumptown::before {
+		& .has-track-track-2-stumptown::before {
 			content: "Stumptown (B113 - B116)";
 		}
 
-		& .has-track-3-timbers::before {
-			content: "Timbers (C123 - C124)";
-		}
-
-		& .has-slug-opening-remarks::before,
-		& .has-slug-closing-announcements::before,
-		& .is-spanning-all-tracks::before {
-			content: "Mt. Hood (Oregon Ballroom)";
-		}
-
-		&.has-track-5-campfire::before {
+		&.has-track-track-3-campfire::before {
 			content: "WordCamp US Lounge";
 		}
 

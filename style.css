@@ -604,6 +604,10 @@ body.single-wcb_session .wp-block-post-terms {
 				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-filled.svg);
 			}
 
+.has-category-hidden:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) > * {
+			display: none !important;
+		}
+
 :is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before {
 			display: inline-block;
 			margin-block-end: 0.5rem;
@@ -613,11 +617,7 @@ body.single-wcb_session .wp-block-post-terms {
 			font-size: 1em;
 		}
 
-.is-spanning-all-tracks:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session):not(.is-type-custom,.has-track-5-campfire)::before,.has-slug-opening-remarks:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before,.has-slug-opening-remarks-2:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before,.has-slug-closing-announcements:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before {
-			content: "Mt. Hood (Oregon Ballroom)";
-		}
-
-.has-track-5-campfire:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before {
+.has-track-track-3-campfire:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before {
 			content: "WordCamp US Lounge";
 		}
 
@@ -746,23 +746,15 @@ body.single-wcb_session .wp-block-post-terms {
 			font-size: 1em;
 		}
 
-		.wordcamp-schedule:not(#hack) .has-track-1-rose-city::before {
+		.wordcamp-schedule:not(#hack) .has-track-track-1-rose-city::before {
 			content: "Rose City (A105 - A106)";
 		}
 
-		.wordcamp-schedule:not(#hack) .has-track-2-stumptown::before {
+		.wordcamp-schedule:not(#hack) .has-track-track-2-stumptown::before {
 			content: "Stumptown (B113 - B116)";
 		}
 
-		.wordcamp-schedule:not(#hack) .has-track-3-timbers::before {
-			content: "Timbers (C123 - C124)";
-		}
-
-		.wordcamp-schedule:not(#hack) .has-slug-opening-remarks::before,.wordcamp-schedule:not(#hack) .has-slug-closing-announcements::before,.wordcamp-schedule:not(#hack) .is-spanning-all-tracks::before {
-			content: "Mt. Hood (Oregon Ballroom)";
-		}
-
-		.wordcamp-schedule.has-track-5-campfire:not(#hack)::before {
+		.wordcamp-schedule.has-track-track-3-campfire:not(#hack)::before {
 			content: "WordCamp US Lounge";
 		}
 
