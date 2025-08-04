@@ -604,9 +604,22 @@ body.single-wcb_session .wp-block-post-terms {
 				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-filled.svg);
 			}
 
-.has-category-hidden:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) > * {
-			display: none !important;
+@media (max-width: 1000px) {
+
+.has-category-hidden:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) {
+				padding: 0;
+				outline: none;
 		}
+			}
+
+.has-category-hidden:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before {
+				content: "" !important;
+				display: none !important;
+			}
+
+.has-category-hidden:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) > * {
+				display: none !important;
+			}
 
 :is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before {
 			display: inline-block;

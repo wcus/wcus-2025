@@ -118,8 +118,20 @@ body.single-wcb_session {
 			}
 		}
 
-		&.has-category-hidden > * {
-			display: none !important;
+		&.has-category-hidden {
+			@media (max-width: 1000px) {
+				padding: 0;
+				outline: none;
+			}
+
+			&::before {
+				content: "" !important;
+				display: none !important;
+			}
+	
+			& > * {
+				display: none !important;
+			}
 		}
 
 		&::before {
