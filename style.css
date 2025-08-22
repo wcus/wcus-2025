@@ -520,6 +520,7 @@ body.single-wcb_session .wp-block-post-terms {
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__day {
 		background-color: var(--wp--preset--color--base);
+		outline: 1px solid var(--wp--preset--color--accent-3);
 	}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session,.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {

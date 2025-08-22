@@ -33,6 +33,7 @@ body.single-wcb_session {
 
 	& .wordcamp-schedule__day {
 		background-color: var(--wp--preset--color--base);
+		outline: 1px solid var(--wp--preset--color--accent-3);
 	}
 
 	& .wordcamp-schedule__session,
