@@ -256,7 +256,7 @@ body.single-wcb_session {
 			content: "All tracks" !important;
 		}
 
-		& .has-slug-closing-party {
+		& .has-slug-closing-party::before {
 			content: "World Forestry Center" !important;
 		}
 	}

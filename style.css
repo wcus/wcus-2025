@@ -741,7 +741,7 @@ body.single-wcb_session .wp-block-post-terms {
 			content: "All tracks" !important;
 		}
 
-		.wordcamp-schedule:not(#hack) .has-slug-closing-party {
+		.wordcamp-schedule:not(#hack) .has-slug-closing-party::before {
 			content: "World Forestry Center" !important;
 		}
 	}
