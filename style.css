@@ -737,7 +737,11 @@ body.single-wcb_session .wp-block-post-terms {
 			content: "Stumptown (B113 - B116)" !important;
 		}
 
-		.wordcamp-schedule:not(#hack) .is-spanning-all-tracks.is-type-custom::before {
+		.wordcamp-schedule:not(#hack) .has-slug-closing-party {
+			content: "World Forestry Center" !important;
+		}
+
+		.wordcamp-schedule:not(#hack) .is-spanning-all-tracks::before {
 			content: "All tracks" !important;
 		}
 	}
