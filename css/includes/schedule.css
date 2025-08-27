@@ -252,12 +252,12 @@ body.single-wcb_session {
 			content: "Stumptown (B113 - B116)" !important;
 		}
 
-		& .has-slug-closing-party {
-			content: "World Forestry Center" !important;
-		}
-
 		& .is-spanning-all-tracks::before {
 			content: "All tracks" !important;
+		}
+
+		& .has-slug-closing-party {
+			content: "World Forestry Center" !important;
 		}
 	}
 
