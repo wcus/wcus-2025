@@ -223,3 +223,88 @@ input[type="reset"] {
 body.home footer.wp-block-template-part {
 	margin-top: 0 !important;
 }
+
+/* Menu Style */
+.wp-block-navigation a:where(:not(.wp-element-button)):hover {
+	text-decoration: none !important;
+}
+
+.wp-block-navigation .wp-block-navigation-submenu li {
+	font-size: var(--wp--preset--font-size--custom-6) !important;
+}
+
+.current-menu-item.wp-block-navigation-item > a {
+	color: var(--wp--preset--color--accent-2) !important;
+}
+
+.wp-block-navigation-item > a.current-menu-ancestor {
+	color: var(--wp--preset--color--accent-2) !important;
+}
+
+.wp-block-navigation-item.has-child.wp-block-navigation-submenu > .wp-block-navigation-item__content::after {
+	font-family: "dashicons";
+	content: "\f140";
+	vertical-align: bottom;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+	padding-top: 4px;
+	padding-bottom: 7px;
+}
+.nav-flex-end {
+	justify-content: flex-end !important;
+}
+
+.is-style-highlight a {
+    padding: 0.5em 1.5em !important;
+}
+
+.wp-block-navigation__submenu-icon {
+	display:none !important;
+}
+
+/* Menu Style for smaller device */
+@media (max-width:1199px) {
+	.wp-container-core-navigation-is-layout-1, .wp-block-navigation__container {
+		gap: 0 !important;
+		align-items: flex-start !important;
+		width: 100% !important;
+	}
+	
+	.wp-block-navigation-item__content:not(.wp-block-navigation__submenu-container .wp-block-navigation-item__content) {
+		font-weight: 600;
+	}
+	
+	.wp-block-navigation__responsive-container-content {
+		align-items: flex-start !important;
+		gap: 15px;
+	}
+	
+	.wp-block-navigation .wp-block-navigation-item {
+		align-items: flex-start !important;
+	}
+	
+	.wp-block-navigation .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none;
+	}
+	
+	.wp-block-navigation .wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+	
+	.wp-block-navigation .wp-block-navigation__responsive-container {
+		width: 80%;
+		margin-left: auto;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	
+	.wp-block-navigation .wp-block-navigation__responsive-container-close {
+		left: 0;
+	}
+	
+	.wp-block-navigation-submenu .current-menu-item.wp-block-navigation-item > a {
+		color: var(--wp--preset--color--accent-2) !important;
+	}
+}
+
